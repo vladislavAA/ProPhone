@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>ProPhone</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__ticker">
+          <span class="header__ticker__content"
+            ><span class="header__ticker__content_bold">SPECIAL OFFER </span> +
+            FREE DELIVERY 2-4 DAYS IN UK 🇬🇧</span
+          >
+        </div>
+        <div class="header__body">
+          <div class="header__logo">
+            <img src="img/logo.svg" alt="Logo" class="header__logo-icon" />
+            <span class="header__logo-text">ProPhone</span>
+          </div>
+          <button class="header__btn" onclick="toggleMenu()">
+            <img src="img/burger.svg" alt="Icon" />
+          </button>
+          <div class="header__menu" id="header__menu">
+            <div class="header__menu-body">
+              <div class="header__menu-logo">
+                <img
+                  src="img/logo-menu.svg"
+                  alt="Logo"
+                  class="header__logo-menu-icon"
+                />
+                <span class="header__logo-text header__logo-text_color"
+                  >ProPhone</span
+                >
+              </div>
+              <button
+                class="header__menu-btn"
+                id="header__menu-btn"
+                onclick="toggleMenu()"
+              >
+                <img
+                  src="img/icon-cross.svg"
+                  alt="Close"
+                  class="header__menu-icon-close"
+                />
+              </button>
+            </div>
+            <nav class="header__menu-nav-bar">
+              <ul class="header__menu-nav">
+                <li class="header__menu-nav-item">
+                  <a
+                    href="#section-description"
+                    class="header__menu-nav-link"
+                    onclick="toggleMenuAndScroll('section-description')"
+                    >Go to product page</a
+                  >
+                  <img
+                    src="img/icon-arrow-menu.svg"
+                    alt="Arrow"
+                    class="header__menu-nav-icon"
+                  />
+                </li>
+                <li class="header__menu-nav-item">
+                  <a
+                    href="#"
+                    class="header__menu-nav-link"
+                    onclick="toggleMenuAndScroll()"
+                    >Track your order</a
+                  >
+                  <img
+                    src="img/icon-arrow-menu.svg"
+                    alt="Arrow"
+                    class="header__menu-nav-icon"
+                  />
+                </li>
+                <li class="header__menu-nav-item">
+                  <a
+                    href="#"
+                    class="header__menu-nav-link"
+                    onclick="toggleMenuAndScroll()"
+                    >Contact us</a
+                  >
+                  <img
+                    src="img/icon-arrow-menu.svg"
+                    alt="Arrow"
+                    class="header__menu-nav-icon"
+                  />
+                </li>
+                <li class="header__menu-nav-item">
+                  <a
+                    href="#"
+                    class="header__menu-nav-link"
+                    onclick="toggleMenuAndScroll()"
+                    >FAQs</a
+                  >
+                  <img
+                    src="img/icon-arrow-menu.svg"
+                    alt="Arrow"
+                    class="header__menu-nav-icon"
+                  />
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="section-slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-color="#918be4">
+              <img
+                src="img/banner-1.jpg"
+                alt="Slide"
+                class="section-slider__slide"
+              />
+            </div>
+            <div class="swiper-slide" data-color="#F49894">
+              <img
+                src="img/banner-2.jpg"
+                alt="Slide"
+                class="section-slider__slide"
+              />
+            </div>
+            <div class="swiper-slide" data-color="#36363E">
+              <img
+                src="img/banner-3.jpg"
+                alt="Slide"
+                class="section-slider__slide"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section-description" id="section-description">
+        <h1 class="section-description__title">
+          Introducing the<br />New
+          <span class="section-description__title_color"
+            >Tiny Phone<br />4G</span
+          >
+        </h1>
+        <img
+          src="img/background-image.jpg"
+          alt="Backroung Image"
+          class="section-description__img"
+        />
+      </section>
+      <section class="section-shipping">
+        <h2 class="section-shipping__title">Shipping & Returns</h2>
+        <div class="section-shipping__accordion">
+          <div class="section-shipping__accordion-header">
+            <img
+              src="img/icon-1.svg"
+              alt="Icon"
+              class="section-shipping__icon"
+            />
+            <h2 class="section-shipping__subtitle">
+              Free delivery in United Kingdom
+            </h2>
+            <img
+              src="img/icon-arrow.svg"
+              alt="Arrow"
+              class="section-shipping__arrow"
+            />
+          </div>
+          <div class="section-shipping__accordion-content">
+            <div class="section-shipping__group-icon">
+              <img
+                src="img/icon-shipping-1.svg"
+                alt="Icon"
+                class="section-shipping__icon-desc"
+              />
+              <img
+                src="img/icon-shipping-2.svg"
+                alt="Icon"
+                class="section-shipping__icon-desc"
+              />
+              <img
+                src="img/icon-shipping-3.svg"
+                alt="Icon"
+                class="section-shipping__icon-desc"
+              />
+              <img
+                src="img/icon-shipping-4.svg"
+                alt="Icon"
+                class="section-shipping__icon-desc"
+              />
+            </div>
+            <span class="section-shipping__description-text"
+              >All purchases are shipped from our warehouse in
+              <span class="section-shipping__description-text_color"
+                >United Kingdom</span
+              >
+              and are fully insured with a tracking number. Tracked delivery
+              between 2-4 days in
+              <span class="section-shipping__description-text_color"
+                >United Kingdom</span
+              >
+              + Free Delivery.</span
+            >
+          </div>
+        </div>
+        <div class="section-shipping__accordion">
+          <div class="section-shipping__accordion-header">
+            <img
+              src="img/icon-2.svg"
+              alt="Icon"
+              class="section-shipping__icon"
+            />
+            <h2 class="section-shipping__subtitle">3 years warranty</h2>
+            <img
+              src="img/icon-arrow.svg"
+              alt="Arrow"
+              class="section-shipping__arrow"
+            />
+          </div>
+          <div class="section-shipping__accordion-content">
+            <span class="section-shipping__description-text"
+              >Our product is guaranteed for 3 years from the date of your
+              purchase.<br />
+              <p class="margin">
+                For more information, please contact our team.
+              </p></span
+            >
+          </div>
+        </div>
+        <div class="section-shipping__accordion">
+          <div class="section-shipping__accordion-header">
+            <img
+              src="img/icon-3.svg"
+              alt="Icon"
+              class="section-shipping__icon"
+            />
+            <h2 class="section-shipping__subtitle">
+              100% money-back guarantee
+            </h2>
+            <img
+              src="img/icon-arrow.svg"
+              alt="Arrow"
+              class="section-shipping__arrow"
+            />
+          </div>
+          <div class="section-shipping__accordion-content">
+            <span class="section-shipping__description-text"
+              >If you're not satisfied with your purchase, we offer a 100% Money
+              Back Guarantee.<br />
+              <p class="margin">No Questions Asked.</p></span
+            >
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__logo">
+          <img src="img/logo.svg" alt="Logo" class="footer__logo-icon" />
+          <span class="footer__logo-text">ProPhone</span>
+        </div>
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy Notice</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms and conditions</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Cookies</a>
+          </li>
+        </ul>
+        <span class="footer__text"
+          >*Information is not a public offer<br />This site is not part of the
+          Facebook or Facebook Inc. website. Also, this site is not endorsed by
+          Facebook in any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook
+          provides a platform for serving advertising, but the opinions and/or
+          views expressed on this website are not representative of Facebook,
+          Inc. Opinions and/or views expressed on our website's social media
+          platforms, including but not limited to our blogs and Facebook pages,
+          represent the thoughts of individual bloggers and online communities,
+          and not necessarily those of our website or any of its business
+          partners, affiliates or any of their respective officers, employees,
+          staff or board members. The views and opinions expressed on these
+          pages do not in any way reflect the opinions of the site on which they
+          are published, other sites affiliated with the site, the personnel
+          involved in the maintenance of the site or any member of the site. Any
+          opinions or views expressed on this website's social media platforms
+          are not representative of Facebook, Inc. Although our website makes
+          reasonable efforts to monitor and/or moderate content posted on its
+          social media platforms, we do not moderate all comments and cannot
+          always respond to online inquiries in a timely manner. All new
+          customers are entered into the raffle for the displayed campaign
+          product. If you are the lucky winner, you will be contacted directly
+          by email. This special offer includes a three-day trial to an
+          affiliated service, after which the subscription fee will be
+          thirty-three euros every fourteen days - automatically deducted from
+          your credit card. If for any reason you are not satisfied with the
+          service, you can cancel your account within three days. The service
+          will renew every thirty days until cancelled. This campaign will
+          expire on December 31 of this year. If you would like to participate
+          without signing up for a three-day trial at Toolsandtoys, please
+          email.</span
+        >
+        <button class="footer__btn">Read less</button>
+        <span class="footer__copyright">© 2023 WhaleCo Inc.</span>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
